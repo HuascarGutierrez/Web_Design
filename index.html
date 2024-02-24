@@ -65,9 +65,11 @@
         <img src="media/perro_waton.jpg" alt="">
     </div>
     <!--forms-->
-    <form action="">
+    <form action=""> <!--There is an attribute for forms called method, the most used is POST,
+        which makes the validation on the server. That's the most secured method-->
         <!--we have three partitions, input, process and output-->
-        <input type="text" name="name"> 
+        <input type="text" name="name" required=""> 
+        <!-- require forces the user to complete the input-->
         <input type="email">
         <input type="checkbox">
         <input type="password">
@@ -75,6 +77,10 @@
         <!-- there are even more types-->
         <input type="submit" value="Enviar datos"> 
         <!--value gives us the content showed, it depends on the type of tag-->
+        <textarea name="" id="" cols="30" rows="10" readonly>Hello, how are you?</textarea>
+        <!--readonly makes textarea not write or type anything inside of it-->
+        <!---if you want to use textarea as an input, just remove readonly-->
+
     </form>
 </body>
 </html>
